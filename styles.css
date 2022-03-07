@@ -2,3 +2,6 @@ div {
     background-color: blue;
     border-width: 3px;
 }
+.container{
+    display: flex;
+}
