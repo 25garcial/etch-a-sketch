@@ -23,10 +23,6 @@ for (let i=1; i<=16; i++){
    }
    
 var select=document.querySelectorAll(".o");
- var color = "#3C9EE7";
+ 
   
-        select.addEventListener(
-                    "mouseover", function () {
-  
-            select.style.background = color;
-        })
+        select.addEventListener("mouseover", function () {select.style.background = "red";})
