@@ -12,3 +12,7 @@ div {
     display: flex;
     flex-direction: column;
 }
+
+.r >.o:hover{
+    background-color: green;
+} 

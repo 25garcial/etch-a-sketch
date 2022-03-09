@@ -8,12 +8,12 @@ for (let i=1; i<=16; i++){
     divCol.textContent=("x"+String(i));
     container.appendChild(divCol);
 
-    for (let o=0; o<16; o++){
+    for (let o=1; o<17; o++){
         var select =document.querySelector(`.r${i}`);
         
         var divCol=document.createElement("div");
       
-        divCol.classList.add("r");
+        divCol.classList.add("o");
         
         divCol.textContent=("h"+String(o));
         
@@ -22,3 +22,4 @@ for (let i=1; i<=16; i++){
     }
    
    }
+   
