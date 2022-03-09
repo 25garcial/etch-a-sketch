@@ -23,12 +23,10 @@ for (let i=1; i<=16; i++){
    }
    
 var select=document.querySelectorAll(".o");
-select.addEventListener("mouseenter", function( event ) {
-    // highlight the mouseenter target
-    event.target.style.color = "purple";
+ var color = "#3C9EE7";
   
-    // reset the color after a short delay
-    setTimeout(function() {
-      event.target.style.color = "";
-    }, 500);
-  }, false);
+        select.addEventListener(
+                    "mouseover", function () {
+  
+            select.style.background = color;
+        })
