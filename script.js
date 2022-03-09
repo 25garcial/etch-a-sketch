@@ -5,7 +5,7 @@ for (let i=1; i<=16; i++){
     var divCol=document.createElement("div");
     divCol.classList.add("r");
     divCol.classList.add("r"+String(i));
-    divCol.textContent=("x"+String(i));
+   // divCol.textContent=("x"+String(i));
     container.appendChild(divCol);
 
     for (let o=1; o<17; o++){
