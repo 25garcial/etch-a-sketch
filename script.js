@@ -22,7 +22,7 @@ for (let i=1; i<=16; i++){
    
    }
    
-var select=document.querySelectorAll(".o");
+var select=document.querySelector(".o");
  
   
         select.addEventListener("mouseover", function () {select.style.backgroundColor = "red";})
