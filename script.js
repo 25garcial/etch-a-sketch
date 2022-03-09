@@ -25,4 +25,4 @@ for (let i=1; i<=16; i++){
 var select=document.querySelectorAll(".o");
  
   
-        select.addEventListener("mouseover", function () {select.style.background = "red";})
+        select.addEventListener("mouseover", function () {select.style.backgroundColor = "red";})
