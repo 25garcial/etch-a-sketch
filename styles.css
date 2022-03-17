@@ -1,3 +1,8 @@
+.container{
+    align-content: center;
+    display: flex;
+    width: 57%;
+}
 div {
     background-color: blue;
     border-width: 3px;
@@ -8,12 +13,7 @@ body{
     background-color: blue;
 
 }
-.container{
-    align-content: center;
-    display: flex;
-    transform: translate(248px)
-    
-}
+
 .box {
     display: flex;
     flex-direction: column;
