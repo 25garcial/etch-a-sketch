@@ -12,7 +12,7 @@ for (let i=1; i<=16; i++){
         var select =document.querySelector(`.r${i}`);
         
         var divCol=document.createElement("div");
-        divCol.classList.add("o");
+        divCol.classList.add("box");
         
         divCol.textContent=("h"+String(o));
         
