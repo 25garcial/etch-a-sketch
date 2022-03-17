@@ -11,7 +11,7 @@ body{
 .container{
     align-content: center;
     display: flex;
-    transform: translate(248.5px)
+    transform: translate(248px)
     
 }
 .box {
