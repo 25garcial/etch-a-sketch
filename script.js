@@ -15,10 +15,10 @@ for (let i=1; i<=16; i++){
         divCol.classList.add("box");
         
         divCol.textContent=("h"+String(o));
-        
-        select.appendChild(divCol);
-        divCol.addEventListener("mouseover", function (e){e.target.style.backgroundColor = "red";})
+        divCol.addEventListener("mouseover", function(e){e.target.style.backgroundColor = "red";})
 
+        select.appendChild(divCol);
+        
     }
    
    }
