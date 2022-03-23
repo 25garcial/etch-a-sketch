@@ -13,10 +13,10 @@ for (let i=1; i<=16; i++){
         
         var divCol=document.createElement("div");
         divCol.classList.add("box");
-        
+        var draw=true;
         //divCol.textContent=("h"+String(o));
-        divCol.addEventListener("mouseover", function(e){e.target.style.backgroundColor = "red";
-        e.target.style.borderColor = "red";})
+        divCol.addEventListener("mouseover", function(e){if (draw){e.target.style.backgroundColor = "red";
+        e.target.style.borderColor = "red";}})
 
         select.appendChild(divCol);
         
@@ -31,4 +31,7 @@ for (let i=1; i<=16; i++){
  
  }
  })
+ alert(typeof(document.querySelector("body")))
+ var body=document.querySelector("body")
+ body.addEventListener("click", function(){draw=!draw})
    
