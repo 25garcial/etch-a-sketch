@@ -31,7 +31,6 @@ for (let i=1; i<=16; i++){
  
  }
  })
- alert(typeof(document.querySelector("body")))
  var body=document.querySelector("body")
  body.addEventListener("click", function(){draw=!draw})
    
