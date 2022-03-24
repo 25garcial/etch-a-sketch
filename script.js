@@ -31,10 +31,12 @@ for (let i=1; i<=16; i++){
  
  }
  })
- selector=document.querySelector("html")
+ selector=document.querySelector("html");
  selector.addEventListener("click", function(){draw=!draw;
- if (draw){document.querySelector(".isDrawing").textContent="Drawing: ON  click to toggle";}else{document.querySelector(".isDrawing").textContent="Drawing: OFF  click to toggle."}})
+ if (draw){document.querySelector(".isDrawing").textContent="Drawing: ON";}else{document.querySelector(".isDrawing").textContent="Drawing: OFF"}})
    
 for (var i=0; i<document.querySelectorAll(".color").length; i++){
-document.querySelectorAll(".color")[i].style.backgroundColor=document.querySelectorAll(".color")[i].id;
+selector=document.querySelectorAll(".color")[i];
+selector.style.backgroundColor=document.querySelectorAll(".color")[i].id;
+selector.addEventListener("click", function(e){color=e.target.style.backgroundColor;})
 }
