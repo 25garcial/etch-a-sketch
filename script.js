@@ -1,5 +1,5 @@
 let container=document.querySelector(".container");
-
+var color="red";
 for (let i=1; i<=16; i++){
     
     var divCol=document.createElement("div");
@@ -15,8 +15,8 @@ for (let i=1; i<=16; i++){
         divCol.classList.add("box");
         var draw=true;
         //divCol.textContent=("h"+String(o));
-        divCol.addEventListener("mousemove", function(e){if (draw){e.target.style.backgroundColor = "red";
-        e.target.style.borderColor = "red";}})
+        divCol.addEventListener("mousemove", function(e){if (draw){e.target.style.backgroundColor = color;
+        e.target.style.borderColor = color;}})
 
         select.appendChild(divCol);
         
@@ -35,3 +35,6 @@ for (let i=1; i<=16; i++){
  selector.addEventListener("click", function(){draw=!draw;
  if (draw){document.querySelector(".isDrawing").textContent="Drawing: ON";}else{document.querySelector(".isDrawing").textContent="Drawing: OFF"}})
    
+for (var i=0; i<document.querySelectorAll(".color").length; i++){
+document.querySelectorAll(".color")[i].style.backgroundColor=document.querySelectorAll(".color")[i].id;
+}
