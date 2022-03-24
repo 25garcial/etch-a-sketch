@@ -29,14 +29,10 @@ body{
 .options{
   left: 60%;
   position: absolute;
-  width: 70%;
-  height: 90%;
+  width: 40%;
+  height: 80%;
   border-color: lightblue;
   background-color: lightblue;
   border-style: solid;
-  
-}
-.isDrawing{
-  
   
 }
