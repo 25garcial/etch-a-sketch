@@ -15,7 +15,7 @@ for (let i=1; i<=16; i++){
         divCol.classList.add("box");
         var draw=true;
         //divCol.textContent=("h"+String(o));
-        divCol.addEventListener("mouseover", function(e){if (draw){e.target.style.backgroundColor = "red";
+        divCol.addEventListener("mousemove", function(e){if (draw){e.target.style.backgroundColor = "red";
         e.target.style.borderColor = "red";}})
 
         select.appendChild(divCol);
