@@ -31,6 +31,7 @@ for (let i=1; i<=16; i++){
  
  }
  })
- var body=document.querySelector("body")
- body.addEventListener("click", function(){draw=!draw})
+ selector=document.querySelector("html")
+ selector.addEventListener("click", function(){draw=!draw;
+ if (draw){document.querySelector(".isDrawing").textContent="Drawing: ON";}else{document.querySelector(".isDrawing").textContent="Drawing: OFF"}})
    
