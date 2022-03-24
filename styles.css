@@ -26,4 +26,17 @@ body{
   height: 25px;
   
 }
-
+.options{
+  left: 60%;
+  position: absolute;
+  width: 70%;
+  height: 90%;
+  border-color: lightblue;
+  background-color: lightblue;
+  border-style: solid;
+  
+}
+.isDrawing{
+  
+  
+}
