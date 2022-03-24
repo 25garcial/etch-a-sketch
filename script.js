@@ -33,7 +33,7 @@ for (let i=1; i<=16; i++){
  })
  selector=document.querySelector("html");
  selector.addEventListener("click", function(){draw=!draw;
- if (draw){document.querySelector(".isDrawing").textContent="Drawing: ON";}else{document.querySelector(".isDrawing").textContent="Drawing: OFF"}})
+ if (draw){document.querySelector(".isDrawing").textContent="Drawing: ON  click to toggle";}else{document.querySelector(".isDrawing  click to toggle").textContent="Drawing: OFF"}})
    
 for (var i=0; i<document.querySelectorAll(".color").length; i++){
 selector=document.querySelectorAll(".color")[i];
