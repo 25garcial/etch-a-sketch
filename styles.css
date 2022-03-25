@@ -42,7 +42,7 @@ body {
 }
 
 .currentColor {
-  transform: translate(70px, -279px);
+  transform: translate(70px, -174px);
   background-color: red;
 }
 
@@ -52,4 +52,9 @@ body {
   text-align: center;
   font-size: 25px;
   transform: translate(70px, 35px)
+}
+
+.customColor {
+  transform: translate(150px);
+  background-color: transparent;
 }
