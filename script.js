@@ -47,15 +47,28 @@ selector.addEventListener("click", function() {
   document.querySelector(".currentColor").style.backgroundColor = color;
 })
 
-for (var i = 0; i < document.querySelectorAll(".color").length; i++) {
-  selector = document.querySelectorAll(".color")[i];
-  selector.style.backgroundColor = document.querySelectorAll(".color")[i].id;
-  selector.addEventListener("click", function(e) {
-    color = e.target.style.backgroundColor;
-    borderColor = color
-  })
+function colors() {
+  for (var i = 0; i < document.querySelectorAll(".color").length; i++) {
+    selector = document.querySelectorAll(".color")[i];
+    selector.style.backgroundColor = document.querySelectorAll(".color")[i].id;
+    selector.addEventListener("click", function(e) {
+      color = e.target.style.backgroundColor;
+      borderColor = color
+    })
+  }
 }
 document.querySelector(".eraser").addEventListener("click", function() {
   color = "blue";
   borderColor = "black";
 })
+document.querySelector("#customColorSubmit").addEventListener("click", function() {
+  var customColor = document.querySelector("#customColor").value;
+  customColor = customColor.replace(/\s/g, "")
+  select = document.querySelector(".colors");
+  var newColor = document.createElement("div");
+  newColor.id = String(customColor);
+  newColor.classList.add("color");
+  select.appendChild(newColor);
+  colors();
+})
+colors();
