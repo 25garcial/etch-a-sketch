@@ -36,8 +36,10 @@ document.querySelector(".clear").addEventListener("click", function() {
 
   }
 })
-selector = document.querySelector("html");
-selector.addEventListener("click", function() {
+selector = document.getElementsByTagName("div");
+for (var i=0; i<selector.length;i++){
+  if (selector[i].classList not includes "box"){
+selector[i].addEventListener("click", function() {
   draw = !draw;
   if (draw) {
     document.querySelector(".isDrawing").textContent = "Drawing: ON  click to toggle";
@@ -45,7 +47,7 @@ selector.addEventListener("click", function() {
     document.querySelector(".isDrawing").textContent = "Drawing: OFF   click to toggle"
   };
   document.querySelector(".currentColor").style.backgroundColor = color;
-})
+}})
 
 function colors() {
   for (var i = 0; i < document.querySelectorAll(".color").length; i++) {
