@@ -38,7 +38,7 @@ document.querySelector(".clear").addEventListener("click", function() {
 })
 selector = document.getElementsByTagName("*");
 for (var i=0; i<selector.length;i++){
-  if (! selector[i].classList.contains("box") && ! selector[i].classList.contains("color")){
+  if (! selector[i].classList.contains("color")){
 selector[i].addEventListener("click", function() {
   draw = !draw;
   if (draw) {
