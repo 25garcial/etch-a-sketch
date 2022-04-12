@@ -36,18 +36,18 @@ document.querySelector(".clear").addEventListener("click", function() {
 
   }
 })
-selector = document.getElementsByTagName("div");
+selector = document.getElementsByTagName("*");
 for (var i=0; i<selector.length;i++){
-  if (selector[i].classList not includes "box"){
+  if (! selector[i].classList.contains("box") && ! selector[i].classList.contains("color")){
 selector[i].addEventListener("click", function() {
   draw = !draw;
   if (draw) {
     document.querySelector(".isDrawing").textContent = "Drawing: ON  click to toggle";
   } else {
     document.querySelector(".isDrawing").textContent = "Drawing: OFF   click to toggle"
-  };
+  }
   document.querySelector(".currentColor").style.backgroundColor = color;
-}})
+})}}
 
 function colors() {
   for (var i = 0; i < document.querySelectorAll(".color").length; i++) {
